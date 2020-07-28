@@ -47,6 +47,7 @@ namespace NewLineRemover
         private void RemoveEnter()
         {
 
+
             var text = Clipboard.GetText();
 
             if (LastText == text)
