@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewLineRemover.XmlModel;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -18,17 +19,24 @@ namespace NewLineRemover
     {
         public Form1()
         {
-
             InitializeComponent();
+            XmlManagment = new XmlManagment();
+            
+            tabControl1.TabPages.Remove(tabPage1);
         }
+
         public long SqlNewNumberValue { get; set; }
+
+        public XmlManagment XmlManagment { get; set; }
+
         private async void Form1_Load(object sender, EventArgs e)
         {
+         
 
+            var result = XmlManagment.Get(ConfigElements.IsActive, Modules.NewLineRemover);
 
             try
             {
-
                 await WaitForItToWork();
             }
             catch (Exception ex)
@@ -46,8 +54,6 @@ namespace NewLineRemover
 
         private void RemoveEnter()
         {
-
-
             var text = Clipboard.GetText();
 
             if (LastText == text)
@@ -288,6 +294,16 @@ namespace NewLineRemover
             }
 
             return result;
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -7,3 +7,4 @@ c:\users\jafar\documents\visual studio 2015\Projects\NewLineRemover\NewLineRemov
 c:\users\jafar\documents\visual studio 2015\Projects\NewLineRemover\NewLineRemover\obj\Debug\NewLineRemover.exe
 c:\users\jafar\documents\visual studio 2015\Projects\NewLineRemover\NewLineRemover\obj\Debug\NewLineRemover.pdb
 C:\Users\jafar\documents\visual studio 2015\Projects\NewLineRemover\NewLineRemover\bin\Debug\scriptTempl.sql
+C:\Users\jafar\documents\visual studio 2015\Projects\NewLineRemover\NewLineRemover\bin\Debug\XmlModel\AppConfig.xml
